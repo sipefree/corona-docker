@@ -2,7 +2,8 @@ FROM jupyter/datascience-notebook
 
 USER root
 
-RUN apt install fonts-lato
+RUN apt-get update
+RUN apt-get install fonts-lato
 
 RUN pip install pandas seaborn jupyter jupyterthemes 
 
