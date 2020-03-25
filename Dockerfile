@@ -5,7 +5,7 @@ USER root
 RUN apt-get update
 RUN apt-get install fonts-lato
 
-RUN pip install pandas seaborn jupyter jupyterthemes 
+RUN pip install pandas seaborn jupyter jupyterthemes mplcursors
 
 RUN jt -t chesterish -nf latosans
 
